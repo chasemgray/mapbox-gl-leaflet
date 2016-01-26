@@ -10,7 +10,7 @@ L.MapboxGL = L.Class.extend({
         }
     },
 
-    onAdd: function (map) {
+    _layerAdd: function (map) {
         this._map = map;
 
         if (!this._glContainer) {
