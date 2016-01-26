@@ -53,7 +53,8 @@ L.MapboxGL = L.Class.extend({
             interactive: false,
             center: [center.lng, center.lat],
             zoom: this._map.getZoom() - 1,
-            attributionControl: false
+            attributionControl: false,
+            zoomAnimation: true
         });
 
         this._glMap = new mapboxgl.Map(options);
